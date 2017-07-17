@@ -1,0 +1,48 @@
+@import 'navigation';
+
+$color : #cdcdcd;
+$margin: 10px;
+$width : 200px;
+
+@mixin default-box($boxcolour, $boxmargin, $boxwidth){
+	background-color: $boxcolour;
+	margin: $boxmargin;
+	width: $boxwidth;
+}
+
+
+.heading{
+	color: darken($color, 70);
+}
+
+.box{
+	@include default-box(red, 100px, 200px);
+	height: $width*2;
+	p {
+		color : green;
+	}
+}
+
+.square{
+	@include default-box(blue, 50px, 20px);
+	height: $width;
+}
+
+.alert {
+	display: block;
+	width: 200px;
+}
+
+.error{
+	@extend .alert;
+	color: red;
+}
+
+.success{
+	@extend .alert;
+	color: green;
+}
+
+.warning{
+
+}

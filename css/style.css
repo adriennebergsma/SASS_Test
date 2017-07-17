@@ -1,0 +1,29 @@
+nav {
+  background-color: red; }
+
+.heading {
+  color: #1a1a1a; }
+
+.box {
+  background-color: red;
+  margin: 100px;
+  width: 200px;
+  height: 400px; }
+  .box p {
+    color: green; }
+
+.square {
+  background-color: blue;
+  margin: 50px;
+  width: 20px;
+  height: 200px; }
+
+.alert, .error, .success {
+  display: block;
+  width: 200px; }
+
+.error {
+  color: red; }
+
+.success {
+  color: green; }
